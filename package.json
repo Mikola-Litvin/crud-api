@@ -5,9 +5,11 @@
   "main": "dist/app.js",
   "type": "module",
   "scripts": {
-    "start:prod": "tsc && node dist/app.js",
-    "start:dev": "tsc --watch | nodemon dist/app.js",
-    "test": "cross-env PORT=3000 node dist/app.js | jest"
+    "build": "tsc",
+    "start:prod": "tsc && node dist/singl.js",
+    "start:multi": "tsc && node dist/multi.js",
+    "start:dev": "tsc --watch | nodemon dist/singl.js",
+    "test": "cross-env PORT=3000 node dist/singl.js | jest"
   },
   "repository": {
     "type": "git",

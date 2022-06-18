@@ -218,7 +218,9 @@ const requestHandler = function (req, res): void {
   }
 };
 
-const server = http.createServer(requestHandler);
-server.listen(Number(process.env.PORT), host, () => {
-    console.log(`Server is running on http://${host}:${process.env.PORT}`);
-});
+export const app = () => {
+  const server = http.createServer(requestHandler);
+  server.listen(Number(process.env.PORT), host, () => {
+      console.log(`Server is running on http://${host}:${process.env.PORT}`);
+  });
+}
