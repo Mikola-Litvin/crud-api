@@ -1,0 +1,30 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "start:prod": "tsc && node dist/app.js",
+    "start:dev": "tsc --watch | nodemon dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikola-Litvin/crud-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikola-Litvin/crud-api/issues"
+  },
+  "homepage": "https://github.com/Mikola-Litvin/crud-api#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.3",
+    "uuid": "^8.3.2"
+  }
+}
